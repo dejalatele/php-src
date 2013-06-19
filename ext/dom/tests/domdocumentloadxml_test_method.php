@@ -1,12 +1,16 @@
 <?php
+include(dirname(__FILE__) . '/domdocumentload_utilities.php');
+
 $doc = new DOMDocument();
 
-$result = $doc->loadXML(file_get_contents(dirname(__FILE__) . getenv('XML_FILE')), $sum);
+$libxml_options = libxml_options_to_int(getenv('LOAD_OPTIONS'));
+$result = $doc->loadXML(file_get_contents(dirname(__FILE__) . getenv('XML_FILE')), 
+    $libxml_options);
 
-$expectedResult2 = (bool) getenv('ASSERT_RESULT');
+$expectedResult = (bool) getenv('EXPECTED_RESULT');
 assert('$result === $expectedResult');
 
-if (getenv('SAVE_XML') == "1") {
+/*if (getenv('SAVE_XML') == "1") {
     echo $doc->saveXML();
-}
+}*/
 ?>
