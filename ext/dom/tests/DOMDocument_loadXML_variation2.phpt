@@ -1,5 +1,5 @@
 --TEST--
-Test DOMDocument::load() with LIBXML_DTDVALID option
+Test DOMDocument::loadXML() with LIBXML_DTDVALID option
 --DESCRIPTION--
 This test verifies the right behaviour of the LIBXML_DTDVALID constant
 Environment variables used in the test:

@@ -1,5 +1,5 @@
 --TEST--
-Test DOMDocument::load() basic behavior
+Test DOMDocument::loadXML() basic behavior
 --DESCRIPTION--
 This test verifies the basic behaviour of the method
 Environment variables used in the test:

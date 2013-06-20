@@ -5,7 +5,7 @@ This test verifies the method detects extra content at the end of the document
 Environment variables used in the test:
 - XML_FILE: the xml file to load
 - LOAD_OPTIONS: the second parameter to pass to the method
-- ASSERT_RESULT: the expected result
+- EXPECTED_RESULT: the expected result
 --CREDITS--
 Antonio Diaz Ruiz <dejalatele@gmail.com>
 --INI--

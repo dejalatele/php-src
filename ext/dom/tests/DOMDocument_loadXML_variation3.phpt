@@ -1,5 +1,5 @@
 --TEST--
-Test DOMDocument::load() with LIBXML_DTDVALID and LIBXML_NOERROR options
+Test DOMDocument::loadXML() with LIBXML_DTDVALID and LIBXML_NOERROR options
 --DESCRIPTION--
 This test vrifies the right behaviour of the LIBXML_NOERROR constant
 which avoids the display of the warning message

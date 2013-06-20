@@ -1,11 +1,11 @@
 --TEST--
-Test DOMDocument::load() detects not-well formed XML 
+Test DOMDocument::loadXML() detects not-well formed XML 
 --DESCRIPTION--
 This test verifies the method detects an unsupported xml version
 Environment variables used in the test:
 - XML_FILE: the xml file to load
 - LOAD_OPTIONS: the second parameter to pass to the method
-- ASSERT_RESULT: the expected result
+- EXPECTED_RESULT: the expected result
 --CREDITS--
 Antonio Diaz Ruiz <dejalatele@gmail.com>
 --INI--
