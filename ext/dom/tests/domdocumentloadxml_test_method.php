@@ -9,8 +9,4 @@ $result = $doc->loadXML(file_get_contents(dirname(__FILE__) . getenv('XML_FILE')
 
 $expectedResult = (bool) getenv('EXPECTED_RESULT');
 assert('$result === $expectedResult');
-
-/*if (getenv('SAVE_XML') == "1") {
-    echo $doc->saveXML();
-}*/
 ?>

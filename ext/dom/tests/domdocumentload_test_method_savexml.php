@@ -9,4 +9,6 @@ $result = $doc->load(dirname(__FILE__) . getenv('XML_FILE'), $libxml_options);
 
 $expectedResult = (bool) getenv('EXPECTED_RESULT');
 assert('$result === $expectedResult');
+
+echo $doc->saveXML();
 ?>
