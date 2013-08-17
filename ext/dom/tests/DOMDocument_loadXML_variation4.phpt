@@ -21,6 +21,7 @@ EXPECTED_RESULT=1
 domdocumentloadxml_test_method_savexml.php
 --EXPECT--
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <!DOCTYPE books [
 <!ENTITY entitest "entity is only for test purposes">
 <!ATTLIST title default CDATA "default title">
@@ -29,4 +30,7 @@ domdocumentloadxml_test_method_savexml.php
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT author (#PCDATA)>
 ]>
+=======
+<!DOCTYPE books SYSTEM "books.dtd">
+>>>>>>> 78281ba2aa17261bbdb3b208cb1c2b584743cd1b
 <books><book><title default="default title">The Grapes of Wrath</title><author>John Steinbeck</author></book><book><title default="default title">The Pearl</title><author>John Steinbeck</author></book><book><title default="default title">entity is only for test purposes</title><author>data for test</author></book></books>
